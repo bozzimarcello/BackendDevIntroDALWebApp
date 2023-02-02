@@ -1,0 +1,19 @@
+﻿@page
+@model BackendDevIntroDALWebApp.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Backend Dev Intro - DAL Web App</title>
+</head>
+<body>
+    <h1>Home - Backend Dev Intro - Data Access Layer Web App</h1>
+    <p>Timestamp del server: @DateTime.Now.ToString()</p>
+    <form action="/search" method="get">
+        <label for="fname">Inserisci una chiave di ricerca:</label><br />
+        <input type="text" id="txt_q" name="q" /><br />
+        <input type="submit" value="Invia" />
+    </form>
+</body>
+</html>
